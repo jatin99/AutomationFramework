@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Amazon" >		
+	 <listeners>
+        <listener class-name="utils.Listeners.TestListener"/>
+        <listener class-name="utils.Listeners.AnnotationTransformer"/>
+    </listeners>	
+	
+	<test name="Test">
+		<parameter name="browser" value="firefox" />
+		<parameter name="number-of-times" value="1"/>
+			
+		<classes>
+			   	  <class name="com.testCases.TC_Parallel2" />
+		</classes>
+
+	</test>
+	<!-- 
+	<test name="TestBack">
+		<parameter name="browser" value="chrome" />
+		<parameter name="number-of-times" value="1"/>
+			
+		<classes>
+			   	  <class name="com.testCases.TC_BoteCommBack" />
+		</classes>
+
+	</test> -->
+</suite>

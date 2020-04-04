@@ -1,0 +1,14 @@
+build
+*.idea
+.gradle
+/target/
+*.class
+*.html
+*.gif
+*.png
+*.project
+*.classpath
+/test-output/
+*.perfs
+/.settings/
+/log/
